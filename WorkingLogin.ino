@@ -66,7 +66,7 @@ void loop(){
   Serial.println();
   Serial.print("Message : ");
   content.toUpperCase();
-  if(content.substring(1) == "D7 7D 57 34"){
+  if(content.substring(1) == "B7 F1 86 11" || content.substring(1) == "D7 7D 57 34"){
     Serial.println("Authorized access");
     Serial.println();
     digitalWrite(strip, HIGH);
@@ -122,6 +122,7 @@ void loop(){
     draw9();    
     } while( u8g.nextPage() );
     delay(1000); 
+    
       u8g.firstPage();
     do {  
       draw10();    
