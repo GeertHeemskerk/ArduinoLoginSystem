@@ -73,7 +73,7 @@ void loop(){
     
     tries = 3;
     Serial.println("Hi, welcome back friend :P !");
-    val = 180;
+    val = 130;
     myServo.write(val);
     loggedIn = true;
 
